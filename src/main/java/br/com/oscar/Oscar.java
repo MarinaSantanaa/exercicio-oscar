@@ -4,8 +4,8 @@ import lombok.Value;
 
 @Value
 public class Oscar {
-        String index;
-        String year;
+        Integer index;
+        Integer year;
         Integer age;
         String name;
         String movie;

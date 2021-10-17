@@ -98,7 +98,7 @@ public class Aplicacao {
         List<Oscar> oscars = new ArrayList<>();
         for (String line : lines) {
             String[] split = line.split("; ");
-            Oscar newOscar = new Oscar(split[0], split[1], Integer.parseInt(split[2]), split[3], split[4]);
+            Oscar newOscar = new Oscar(Integer.parseInt(split[0]), Integer.parseInt(split[1]), Integer.parseInt(split[2]), split[3], split[4]);
             oscars.add(newOscar);
         }
         return oscars;
